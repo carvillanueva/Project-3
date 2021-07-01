@@ -1,0 +1,31 @@
+* {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: rgb(247, 244, 244);
+    font-size: 1em;
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*TOP SECTION*/
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: navy;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    text-align: center;
+}

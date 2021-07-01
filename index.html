@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Review Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>The Code Review</h1> <!--Header TITLE-->
+    </header>
+
+    <div class="banner">
+        <h2>Signup for our newsletter</h2>
+        <p class="intro">Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+
+    <hr class="thick-line">
+
+    <hr class="normal-line">
+    
+    <form action="index.html" method="POST" class="container clearfix">
+
+        <fieldset>
+            <!--Contact Information-->
+            <legend><strong>Contact Information</strong></legend>
+
+            <label for="name">Full Name</label>  <!--Full Name -->
+            <input type="text" id="name" name="user_name" placeholder="Required" required>
+
+            <label for="email">Email Address</label> <!--Email Address -->
+            <input type="email" id="email" name="user_email" placeholder="Required" required>
+
+            <label for="phone_number">Phone Number</label> <!--Phone Number -->
+            <input type="tel" id="phone_number" name="user_phone_number" placeholder="Required" required>
+
+            <label for="streer_address">Street Address</label> <!--Stree Address -->
+            <input type="text" id="street_address" name="user_stree_address" placeholder="Required" required>
+ 
+            <label for="city">City</label> <!--City -->
+            <input type="text" id="city" name="user_city" placeholder="Required" required>
+
+            <label for="state">State</label> <!--State -->
+            <select id="state" name="user_state"> <!--Drop down for choosing State-->
+                <optgroup label="Choose State">
+                    <option disabled selected>Choose State</option>
+                    <option value="alabama">Alabama</option>
+                </optgroup>
+            </select>
+
+            <label for="zip_code">Zip-Code</label> <!--Zip Code -->
+            <input type="text" id="zip_code" name="user_zip_code" placeholder="Required" required>
+
+        </fieldset>
+
+        <hr class="normal_line">
+
+        <fieldset>
+
+            <legend><strong>Newsletter</strong></legend>
+
+            <p>Select the newsletters you would like to recieve</p> <!--Checkbox...Choosing Newsletter -->
+
+                <input type="checkbox" id="html_news" value="selected_html_news" name="user_interest">
+                <label class="light" for="html_news">HTML News</label>
+
+                <input type="checkbox" id="css_news" value="selected_css_news" name="user_interest">
+                <label class="light" for="css_news">CSS News</label>
+
+
+                <input type="checkbox" id="javascript_news" value="selected_javascript_news" name="user_interest">
+                <label class="light" for="javascript_news">Javascript News</label>
+
+
+                <p>Newsletter format</p> <!--Radio... Select one Format-->
+
+
+                <input type="radio" id="html" value="html" name="news_format">
+                <label class="light" for="html">HTML</label>
+
+                <input type="radio" id="plain_text" value="plain_text" name="news_format">
+                <label class="light" for="plain_text">Plain Text</label>
+
+
+                <label for="other_topics">Other topics you'd like to hear about</label> <!--Textarea... Open text area for onpion-->
+
+
+                <textarea id="other_topics" name="user_other_topics"></textarea>
+ 
+        </fieldset>
+
+        <button type="submit" class="button">Sign Up</button>
+
+        <footer>
+            <em>Copyright The Code Review</em>
+        </footer>
+
+
+
+    </form>
+
+
+
+</body>
+</html>
