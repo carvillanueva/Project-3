@@ -1,12 +1,12 @@
 * {
-    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 body {
+    font-family: 'Merriweather', serif;
     background-color: rgb(247, 244, 244);
     font-size: 1em;
-    padding: 0%;
-    margin: 0%;
 }
 
 .container {
@@ -14,18 +14,217 @@ body {
     margin: 0 auto;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+fieldset {
+    border: 0;
+}
 
 /*TOP SECTION*/
 
 header {
     text-align: center;
+    font-size: 1.1em;
+    font-weight: bolder;
     text-transform: uppercase;
-    background-color: navy;
+    background-color: rgb(34, 34, 46);
     color: white;
-    margin: 0;
-    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .banner {
     text-align: center;
+    margin-top: 25px;
+}
+
+.banner h2 {
+    font-size: 1.7em;
+}
+
+.banner p {
+    width: 90%;
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.thick_line {
+    position: relative;
+    top: 5px;
+    border: none;
+    height: 5px;
+    background: black;
+    width: 90%;
+    max-width: 800px;
+}
+
+.normal_line {
+    position: relative;
+    top: 2px;
+    border: none;
+    height: 2px;
+    background: black;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+form {
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: none;
+    max-width: 800px;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px 50px 20px 0px;
+}
+
+/*1ST FIELDSET*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"], 
+select {
+    width: 100%;
+    line-height: 3;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+  
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid lightgrey;
+  box-shadow: 0 0 0 0.2rem lightgrey;;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+#zip_code {
+    width: 50%;
+    display: block;
+}
+
+select[name="user_state"] {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+::placeholder {
+    font-style: italic;
+    text-align: right;
+    padding-right: 20px;
+    color: lightgrey;
+}
+
+/*2ND FIELDSET*/
+
+.directions,
+.topics {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    font-weight: bold;
+}
+
+label[for="other_topics"] {
+    display: block;
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*BUTTON*/
+
+button {
+    padding: 18px 38px 18px 38px;
+    color: #FFF;
+    background-color: #1da79b;
+    font-size: 25px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #1da79b;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*FOOTER*/
+
+footer {
+    text-align: center;
+    color: slategray;
+    margin-bottom: 20%;
+}
+
+
+/*MEDIA FIX*/
+
+@media (min-width: 768px) {
+
+    body {
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
+    #zip_code {
+        width: 25%;
+    }
+
 }

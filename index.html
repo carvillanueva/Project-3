@@ -22,13 +22,13 @@
         <p class="intro">Get the latest news on how your code is doing right in your inbox</p>
     </div>
 
-    <hr class="thick-line">
+    <hr class="thick_line">
 
-    <hr class="normal-line">
+    <hr class="normal_line">
     
     <form action="index.html" method="POST" class="container clearfix">
 
-        <fieldset>
+        <fieldset class="contact">
             <!--Contact Information-->
             <legend><strong>Contact Information</strong></legend>
 
@@ -62,11 +62,11 @@
 
         <hr class="normal_line">
 
-        <fieldset>
+        <fieldset class="newsletter">
 
             <legend><strong>Newsletter</strong></legend>
 
-            <p>Select the newsletters you would like to recieve</p> <!--Checkbox...Choosing Newsletter -->
+            <p class="directions">Select the newsletters you would like to recieve</p> <!--Checkbox...Choosing Newsletter -->
 
                 <input type="checkbox" id="html_news" value="selected_html_news" name="user_interest">
                 <label class="light" for="html_news">HTML News</label>
@@ -79,7 +79,7 @@
                 <label class="light" for="javascript_news">Javascript News</label>
 
 
-                <p>Newsletter format</p> <!--Radio... Select one Format-->
+            <p class="directions">Newsletter format</p> <!--Radio... Select one Format-->
 
 
                 <input type="radio" id="html" value="html" name="news_format">
@@ -89,7 +89,7 @@
                 <label class="light" for="plain_text">Plain Text</label>
 
 
-                <label for="other_topics">Other topics you'd like to hear about</label> <!--Textarea... Open text area for onpion-->
+                <label for="other_topics" class="topics">Other topics you'd like to hear about</label> <!--Textarea... Open text area for onpion-->
 
 
                 <textarea id="other_topics" name="user_other_topics"></textarea>
@@ -98,14 +98,12 @@
 
         <button type="submit" class="button">Sign Up</button>
 
-        <footer>
-            <em>Copyright The Code Review</em>
-        </footer>
-
-
 
     </form>
 
+    <footer>
+        <em>Copyright The Code Review</em>
+    </footer>
 
 
 </body>
