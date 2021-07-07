@@ -73,7 +73,7 @@ header {
     background: black;
     margin-top: 7px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 90%;
     max-width: 800px;
 }
 
@@ -129,6 +129,7 @@ input[type="radio"]:checked + label {
 select[name="user_state"] {
     padding: 10px;
     margin: 10px 0;
+    color: lightgrey;
 }
 
 ::placeholder {
@@ -141,23 +142,20 @@ select[name="user_state"] {
 /*2ND FIELDSET*/
 
 .directions,
+.topics,
 .topics {
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-
 input[type="checkbox"],
 input[type="radio"] {
     margin: 10px;
+    width: 10px;
+    
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    font-weight: bold;
-}
-
-label[for="other_topics"] {
+label [for="other_topics"] {
     display: block;
     margin-right: 10px;
 }
@@ -170,15 +168,9 @@ textarea {
     border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
+.newsletter label {
+    display: inline-block;
+}
 
 
 /*BUTTON*/

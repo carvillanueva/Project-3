@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
             <label for="phone_number">Phone Number</label> <!--Phone Number -->
             <input type="tel" id="phone_number" name="user_phone_number" placeholder="Required" required>
 
-            <label for="streer_address">Street Address</label> <!--Stree Address -->
+            <label for="street_address">Street Address</label> <!--Stree Address -->
             <input type="text" id="street_address" name="user_stree_address" placeholder="Required" required>
  
             <label for="city">City</label> <!--City -->
@@ -68,6 +69,7 @@
 
             <p class="directions">Select the newsletters you would like to recieve</p> <!--Checkbox...Choosing Newsletter -->
 
+                
                 <input type="checkbox" id="html_news" value="selected_html_news" name="user_interest">
                 <label class="light" for="html_news">HTML News</label>
 
@@ -87,7 +89,6 @@
 
                 <input type="radio" id="plain_text" value="plain_text" name="news_format">
                 <label class="light" for="plain_text">Plain Text</label>
-
 
                 <label for="other_topics" class="topics">Other topics you'd like to hear about</label> <!--Textarea... Open text area for onpion-->
 
