@@ -92,6 +92,8 @@ legend {
     margin: 20px 50px 20px 0px;
 }
 
+
+
 /*1ST FIELDSET*/
 
 input[type="text"],
@@ -148,6 +150,10 @@ select[name="user_state"] {
     padding-bottom: 15px;
 }
 
+.news_title {
+    padding-top: 15px;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
     margin: 10px;
@@ -160,16 +166,17 @@ label [for="other_topics"] {
     margin-right: 10px;
 }
 
+.newsletter label {
+    display: inline-block;
+    margin: 5px;
+}
+
 textarea {
     width: 100%;
     background-color: #fff;
     padding: 30px;
     border: 0;
     border-radius: 5px;
-}
-
-.newsletter label {
-    display: inline-block;
 }
 
 
