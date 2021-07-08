@@ -24,6 +24,10 @@ fieldset {
     border: 0;
 }
 
+label {
+    color: rgba(12, 12, 12, 0.521);
+}
+
 /*TOP SECTION*/
 
 header {
@@ -47,6 +51,7 @@ header {
 }
 
 .banner p {
+    color: rgba(12, 12, 12, 0.521);
     width: 90%;
     font-size: 1.1em;
     margin-top: 1em;
@@ -72,8 +77,17 @@ header {
     height: 2px;
     background: black;
     margin-top: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     width: 90%;
+    max-width: 800px;
+}
+
+.normal_line2 {
+    position: relative;
+    border: none;
+    height: 2px;
+    margin-bottom: 15px;
+    background: black;
     max-width: 800px;
 }
 
@@ -85,6 +99,7 @@ form {
 }
 
 legend {
+    color: rgba(12, 12, 12, 0.521);
     font-size: 22px;
     font-weight: bolder;
     padding-top: 10px;
@@ -148,9 +163,11 @@ select[name="user_state"] {
 .topics {
     padding-top: 15px;
     padding-bottom: 15px;
+    color: rgba(12, 12, 12, 0.521);
 }
 
 .news_title {
+    margin-top: 15px;
     padding-top: 15px;
 }
 
@@ -177,6 +194,7 @@ textarea {
     padding: 30px;
     border: 0;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 
@@ -186,7 +204,7 @@ button {
     padding: 18px 38px 18px 38px;
     color: #FFF;
     background-color: #1da79b;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
@@ -195,7 +213,7 @@ button {
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /*FOOTER*/
@@ -204,6 +222,8 @@ footer {
     text-align: center;
     color: slategray;
     margin-bottom: 20%;
+    margin-top: 20px;
+    margin-bottom: 45%;
 }
 
 
@@ -213,14 +233,39 @@ footer {
 
     body {
         margin: 0 auto;
+        font-size: 16.5px;
     }
 
+    .banner {
+        margin-top: 45px;
+    }
 
+    form,
+    .thick_line,
+    .normal_line,
+    .normal_line2  {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .normal_line,
+    .normal_line2 {
+        margin-bottom: 25px;
+    }
 
+    .contact label {
+        margin-top: 30px;
+        float: left;
+        width: 25%;
+    }
 
-
-
+    .contact input,
+    select {
+        width: 75%;
+        padding: 2px 5px;
+        margin: 15px 0;
+    }
 
     #zip_code {
         width: 25%;
