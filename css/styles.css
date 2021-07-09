@@ -95,7 +95,7 @@ header {
 form {
     margin: 10px auto;
     padding: 10px 20px;
-    border-radius: none;
+    border-radius: 0;
     max-width: 800px;
 }
 
@@ -122,7 +122,6 @@ select {
     border: 1px solid #fff;
     border-radius: 5px;
     margin: 15px 0;
-  
 }
 
 input[type="text"]:focus,
@@ -131,7 +130,8 @@ input[type="tel"]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid lightgrey;
-  box-shadow: 0 0 0 0.2rem lightgrey;;
+  box-shadow: 0 0 0 0.2rem lightgrey;
+  transition: 3s linear;
 }
 
 input[type="checkbox"]:checked + label,
@@ -198,6 +198,13 @@ textarea {
     border: 0;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    font-style: italic;
+    text-align: center;
+    padding-right: 20px;
+    color: lightgrey;
 }
 
 
